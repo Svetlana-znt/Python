@@ -16,15 +16,14 @@
 # k = int(input("введите число сдвига k = "))
 # list_new = [1,2,3,5,8,9,12,4]
 # list_1=list()
-# count = 0
-# print(list_1[k:len(list_new)])
-# for j in range (len(list_new)):
-#     if j<=len(list_new)-k:
-#         list_1[j] = list_new[j+k]
-#         k+=1
-#     elif j<=len(list_new):
-#         list_1[j] = list_new[count]
-#         count+=1
+# j = 0
+# for i in range (len(list_new)):
+#     if i<=k:
+#         j=len(list_new)-i
+#         list_1[j] = list_new[i]
+#     elif i > k:
+#         list_1[j] = list_new[i]
+#         j+=1
 # print(list_1)
 #--------------------------------------------------------------------------
 #ДЗ №16
@@ -65,21 +64,21 @@
 #         d1 = abs(list_new[j]-x)
 #---------------------------------------------------------------------------
 #
-dictionary = {1:"AEIOULNSTRАВЕИНОРСТ",
-                2:"DGДКЛМПУ",
-                3:"BCMPБГЁЬЯ",
-                4:"FHVWYЙЫ",
-                5:"KЖЗХЦЧ",
-                8:"JXШЭЮ",
-                10:"QZФЩЪ"}
+# dictionary = {1:"AEIOULNSTRАВЕИНОРСТ",
+#                 2:"DGДКЛМПУ",
+#                 3:"BCMPБГЁЬЯ",
+#                 4:"FHVWYЙЫ",
+#                 5:"KЖЗХЦЧ",
+#                 8:"JXШЭЮ",
+#                 10:"QZФЩЪ"}
 
-word = input("Введите слово: ").upper()
-summ = 0
-for i in word:
-    for k, v in dictionary.items():
-        if i in v:
-            summ += k
-print(f"Стоимость слова: {summ}")
+# word = input("Введите слово: ").upper()
+# summ = 0
+# for i in word:
+#     for k, v in dictionary.items():
+#         if i in v:
+#             summ += k
+# print(f"Стоимость слова: {summ}")
 
 
 
