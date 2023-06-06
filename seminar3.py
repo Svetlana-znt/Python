@@ -1,17 +1,17 @@
-# list_new = list() # Создаем пустой список
-# for i in range(8): # Цикл выполняется 8 раз
-#     n = int(input('Введите чило:')) # Пользователь вводит целое число
-#     list_new.append(n) # Сохранение целого числа в конце списка
-# print(list_new)
-# count = 0
-# max = 0
-# for j in range(0,len(list_new)-1):
-#     for k in range(j+1,len(list_new)):
-#         if list_new[j]  != list_new[k]:
-#             count +=1
-#     # if count > max:
-#     #     max = count
-#         print(count)
+list_new = list() # Создаем пустой список
+for i in range(8): # Цикл выполняется 8 раз
+    n = int(input('Введите чило:')) # Пользователь вводит целое число
+    list_new.append(n) # Сохранение целого числа в конце списка
+print(list_new)
+max = 0
+for j in range(0,len(list_new)-1):
+    count = 0
+    for k in range(j+1,len(list_new)):
+        if list_new[j]  != list_new[k]:
+            count +=1
+if count > max:
+    max = count
+print(max)
 #------------------------------------------------------------------------------
 # k = int(input("введите число сдвига k = "))
 # list_new = [1,2,3,5,8,9,12,4]
