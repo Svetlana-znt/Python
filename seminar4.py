@@ -1,5 +1,5 @@
 # ДЗ №22
-import random
+import random # Импорт функции из файла функций
 kust = int(input("введите количество кустов: "))
 berryes = list(random.randint(0, 10) for i in range(kust))
 result = []
@@ -20,7 +20,7 @@ while (i < kust):
 print(f"максимальное число ягод за одну итерацию {result[-1]}")
 #---------------------------------------------------------------------
 # ДЗ №24
-# from random import randint
+# from random import randint # здесь импортировала функцию напрямую
 # n_set = set(randint(1, 20) for i in range(int(input("Введите кол-во элементов первого множества: "))))
 # print(n_set)
 # m_set = set(randint(1, 20) for i in range(int(input("Введите кол-во элементов второго множества: "))))
